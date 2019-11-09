@@ -1,0 +1,8 @@
+.create {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.edit {
+  margin-right: 20px;
+}

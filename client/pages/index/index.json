@@ -2,7 +2,7 @@
   "component": true,
   "usingComponents": {
       "router-view": "miniapp-router/router-view/router-view",
-      "base": "../../component/base/base",
+      "base": "../../activity/base/base",
       "huhu": "../../huhu/hh/hh"
   }
 }

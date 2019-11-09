@@ -1,0 +1,6 @@
+<view>
+  <router-view>
+    <list slot="list" />
+    <add slot="add" />
+  </router-view>
+</view>

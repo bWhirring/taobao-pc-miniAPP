@@ -1,0 +1,11 @@
+<view class="create">
+  <button type="primary" onTap="tapname">创建活动</button>
+</view>
+<table dataSource="{{dataSource}}">
+  <table-column title="活动名称" dataIndex="name"/>
+  <table-column title="活动时间" dataIndex="date"/>
+  <table-column title="操作" dataIndex="id">
+    <button class="edit" onTap="handleClick" type="primary" text="true" data-x="{{x}}" slot-scope="x">编辑</button>
+    <button onTap="handleClick" type="primary" text="true" data-x="{{x}}" slot-scope="x">删除</button>
+  </table-column>
+</table>

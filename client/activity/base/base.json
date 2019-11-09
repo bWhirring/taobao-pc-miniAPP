@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "router-view": "miniapp-router/router-view/router-view",
+    "list": "../list/list",
+    "add": "../add/add"
+  }
+}
