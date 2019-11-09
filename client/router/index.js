@@ -3,14 +3,6 @@ export const basePath = '/activity/list';
 export default {
   routes: [
     {
-      path: '/component',
-      component: 'component',
-      children: [
-        { path: '/base', component: 'base' },
-        { path: '/activity', component: 'activity' },
-      ],
-    },
-    {
       path: '/activity',
       component: 'activity',
       children: [
