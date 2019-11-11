@@ -1,7 +1,5 @@
 <view>
-  <button type="primary" onTap="onActiveKeyChange" data-path="/activity/add"> 切换到"Button"</button>
-  <button type="primary" onTap="onActiveKeyChange" data-path="/huhu/hh"> 切换到"基础api"</button>
-  <framework info="{{ info }}" menu="{{ menu }}" onChange="onChange" defaultActiveKey="{{ defaultActiveKey }}" activeKey="{{ activeKey }}">
+  <framework class="framework" info="{{ info }}" menu="{{ menu }}" onChange="onChange" defaultActiveKey="{{ defaultActiveKey }}" activeKey="{{ activeKey }}">
     <router-view>
       <base slot="activity" />
       <huhu slot="huhu" />
