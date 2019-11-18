@@ -1,3 +1,72 @@
-<view>
-  New Component
+<view class="edit-breadcrumb">
+  <text class="edit-title" onTap="goToActivityList">我的活动</text><text class="edit-title edit-title-separate">/</text><text  class="edit-title">编辑[打星球赢大奖]活动</text>
 </view>
+
+
+<view class="edit-content">
+  <form class="edit-content-form" inline="true">
+    <view class="edit-content-title">基础配置</view>
+    <form-item size="large" class="edit-content-formItem" label="活动名称" required>
+        <input class="edit-content-input" maxLength="7" onChange="onChange" data-name="username" defaultValue="{{username}}" hasLimitHint="true"  name="活动名称" placeholder="请输入活动名称"/>
+    </form-item>
+    <form-item size="large" help="注：每期活动至多设置7天" class="edit-content-formItem" label="活动时间" required>
+       <range-picker  hasClear="true" value="{{timeValue}}" onChange="pickerChange" show-time="{{ format: 'HH:mm' }}" class="block" />
+    </form-item>
+    <form-item size="large" class="edit-content-formItem" label="选择群聊" required>
+      <view class="edit-content-formItem-qunliao"><text>已选</text><text class="formItem-qunliao-num">17</text><text>个群聊</text><text class="formItem-qunliao-btn" onTap="handlerShowGroup">重新选择</text></view>
+    </form-item>
+    <view class="edit-content-title">奖品配置</view>
+    <form-item size="large" class="edit-content-formItem" label="奖品配置" required>
+      <table dataSource="{{datasource}}" style="width:400px;">
+        <table-column title="名次" dataIndex="id">
+          <view slot-scope="x"> {{x.value}} </view>  //设置slot-scope属性能获取每一行渲染的数据，包含值为（value, index, record）
+        </table-column>
+        <table-column title="奖品" dataIndex="time">
+          <button class="custom-button-1" type="normal" onClick="handleClick" type="primary" data-x="{{x}}" slot-scope="x">查看数据</button>
+        </table-column>
+         <table-column title="操作" dataIndex="time">
+          <button class="custom-button-1" type="normal" onClick="handleClick" type="primary" data-x="{{x}}" slot-scope="x">查看数据</button>
+        </table-column>
+      </table>       
+      <view class="edit-content-formItem-addTableList"><icon size="xs" type="add" style="color: #3386F1;" />添加其余排名奖品</view>
+    </form-item>
+    <view class="edit-content-title">签到配置</view>
+    <form-item size="large" class="edit-content-formItem" label="第一天" required>
+      <select onChange="onChange" style="width:150px;" onBlur="onBlur" onToggleHighlightItem="onToggleHighlightItem" defaultValue="jack" showSearch hasClear>
+        <option value="jack">加分卡</option>
+        <option value="frank">复活卡</option>
+      </select>
+      <input  style="width:200px;" addonTextAfter="分" onChange="onChange" data-name="username" defaultValue="{{username}}" hasLimitHint="true"  name="活动名称" placeholder="请输入分数"/>
+    </form-item>
+    <view class="edit-content-title">任务配置</view>
+    <form-item size="large" class="edit-content-formItem" label="选择群聊" required>
+      <checkbox defaultChecked >群内发言</checkbox>
+      <checkbox  class="edit-content-formItem-checkbox">浏览宝贝</checkbox>
+      <checkbox  class="edit-content-formItem-checkbox">浏览制定页面</checkbox>
+    </form-item>
+    <view class="checkbox-content">
+      <view>群内发言：已选择</view>
+      <view>浏览宝贝：<text>选择宝贝</text></view>
+      <view>浏览制定页面：<text>录入链接</text></view>
+    </view>
+    <view class="edit-content-title">规则配置</view>
+    <form-item size="large" class="edit-content-formItem" label="活动规则" required>
+      <view class="edit-content-formItem-qunliao"><text>用于展示在活动页的规则说明</text><text class="formItem-qunliao-btn">重新生成</text></view>
+    </form-item>
+    <view class="rule-config-textarea">
+      <textarea placeholder="TextArea" aria-label="TextArea"></textarea>
+    </view>
+  </form>
+  <view class="submit-btn">
+    <button type="primary">确定</button>
+    <button>取消</button>
+  </view>
+</view>
+
+<prize-dialog />
+
+<choose-dialog />
+
+<custom-link-dialog />
+
+<group-dialog showGroup="{{showGroup}}" changeGroup="{{changeGroup}}"/>

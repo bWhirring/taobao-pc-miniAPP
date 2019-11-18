@@ -5,7 +5,12 @@
   <table-column title="活动名称" dataIndex="name"/>
   <table-column title="活动时间" dataIndex="date"/>
   <table-column title="操作" dataIndex="id">
-    <button class="edit" onTap="handleClick" type="primary" text="true" data-x="{{x}}" slot-scope="x">编辑</button>
-    <button onTap="handleClick" type="primary" text="true" data-x="{{x}}" slot-scope="x">删除</button>
+    <button class="edit" onTap="handleClickCheck" type="primary" text="true" data-x="{{x}}" slot-scope="x">查看</button>
+    <button onTap="handleClickEdit" type="primary" text="true"  data-x="{{x}}" slot-scope="x">编辑</button>
   </table-column>
 </table>
+
+<view class="pagination">
+  <text class="pagination-text">共{{pageInfo.total}}条数据</text>
+  <pagination defaultCurrent="1" onChange="changePagination" pageShowCount="5" total="{{pageInfo.total}}" />
+</view>

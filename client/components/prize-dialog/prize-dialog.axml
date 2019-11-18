@@ -1,0 +1,51 @@
+<view>
+<overlay
+    visible=""
+    onRequestClose="onClose"
+    hasMask="true"
+    style="width:60%;position:absolute;left:0px;right:0px;margin:0 auto;top:200px;"
+    target=".edit-breadcrumb"
+    canCloseByMask="true"
+    data-index="1"
+  >
+    <view class="modal-content">
+      <view class="modal-content-title">选择奖品<icon size="small" type="close" style="color: #999999;" /></view>
+      <view class="modal-content-form"> 
+        <form class="edit-content-form" inline="true">
+          <form-item size="large" class="edit-content-formItem edit-content-formItem-choosePrize" label="奖品名称" required>
+            <select onChange="onChange" style="width:150px;" onBlur="onBlur" onToggleHighlightItem="onToggleHighlightItem" defaultValue="jack" showSearch hasClear>
+              <option value="jack">实物</option>
+              <option value="frank">优惠券</option>
+            </select>
+            <select onChange="onChange" style="width:150px;margin-left:10px;" onBlur="onBlur" onToggleHighlightItem="onToggleHighlightItem" defaultValue="jack" showSearch hasClear>
+              <option value="jack">加分卡</option>
+              <option value="frank">复活卡</option>
+            </select>
+            <text class="edit-content-formItem-choosePrize-btn">点击添加</text><text>|</text><text>刷新</text>
+          </form-item>
+          <view class="modal-content-imageUpload">
+            <image style="width:90px;height:90px" src="https://dummyimage.com/750x350"></image>
+            <view class="modal-content-imageUpload-btn">
+              <view>奖品图片</view>
+              <text>尺寸为200px * 200px，格式为jpg/png</text>
+              <view></view>
+              <button type="primary">上传图片</button>
+            </view>
+          </view>
+          <form-item size="large" class="edit-content-formItem" label="奖品名称" validateState="error" required requiredMessage="{{'错了啦'}}">
+            <input class="edit-content-input" maxLength="6" data-name="username" defaultValue="{{username}}" hasLimitHint="true"  name="活动名称" placeholder="请输入奖品名称"/>
+          </form-item>
+          <view></view>
+          <form-item size="large" class="edit-content-formItem" label="领奖名次" required validateState="error" requiredMessage="错了啦">
+            第<input style="width:60px;margin:0 4px"  onChange="onChange" data-name="username" defaultValue="{{username}}" hasLimitHint="true"/>
+            至<input style="width:60px;margin:0 4px"  onChange="onChange" data-name="username" defaultValue="{{username}}" hasLimitHint="true"/>名
+          </form-item>
+        </form>
+      </view>
+      <view class="modal-content-btn">
+         <button type="primary">确定</button>
+        <button>取消</button>
+      </view>
+    </view>
+  </overlay>
+</view>

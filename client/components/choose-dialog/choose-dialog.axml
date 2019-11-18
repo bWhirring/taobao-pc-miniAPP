@@ -1,0 +1,66 @@
+<view>
+<overlay
+    visible=""
+    onRequestClose="onClose"
+    hasMask="true"
+    style="width:60%;position:absolute;left:0px;right:0px;margin:0 auto;top:200px;"
+    target=".edit-breadcrumb"
+    canCloseByMask="true"
+    data-index="1"
+  >
+    <view class="modal-content">
+      <view class="modal-content-title">选择奖品<icon size="small" type="close" style="color: #999999;" /></view>
+      <tab class="choose-content-tab">
+        <tab-item 
+          title="全部宝贝"
+          key="all"
+        >
+          <view class="choose-content-tab-view">
+            <select onChange="onChange" onBlur="onBlur" onToggleHighlightItem="onToggleHighlightItem" defaultValue="jack" showSearch hasClear>
+              <option value="jack">Jack</option>
+              <option value="frank">Frank</option>
+              <option value="hugo">Hugo</option>
+            </select>
+            <select style="margin-left:20px;" onChange="onChange" onBlur="onBlur" onToggleHighlightItem="onToggleHighlightItem" defaultValue="jack" showSearch hasClear>
+              <option value="jack">Jack</option>
+              <option value="frank">Frank</option>
+              <option value="hugo">Hugo</option>
+            </select>
+            <text style="margin-left:20px;font-size:12px">标题关键字</text>
+            <input style="width:120px;margin:0 10px" placeholder="标题关键字"/>
+            <button type="primary" size="small">搜索</button>
+          </view>
+          <view class="choose-content-tab-baby-wrap">
+            <view class="choose-content-tab-baby">
+              <view class="choose-content-tab-image-wrap">
+                <image src="https://dummyimage.com/134x134"></image>
+              </view>
+              <view class="choose-content-tab-baby-info">
+                <view class="choose-content-tab-baby-info-title">这里是商品名称显示一行不要对了阿萨继续</view>
+                <view class="choose-content-tab-baby-info-prize"><text class="prize-now">￥<text>554.0</text></text><text class="prize-old">688</text></view>
+              </view>
+              <checkbox class="block"></checkbox>
+            </view>
+          </view>
+         
+        </tab-item>
+         <tab-item 
+         key="choose"
+          title="已选择(5)"
+        >
+          <view class="choose-content-tab-view">
+
+          </view>
+        </tab-item>
+      </tab>
+      <view class="modal-content-btn choose-modal-footer">
+        <view>已选择<text>5</text>个宝贝</view>
+        <view>
+          <button type="primary">确定</button>
+          <button>取消</button>
+        </view>
+        
+      </view>
+    </view>
+  </overlay>
+</view>

@@ -1,0 +1,68 @@
+.modal-content-btn.choose-modal-footer {
+  justify-content:space-between;
+  align-items:center;
+}
+.choose-content-tab {
+  padding:10px 20px;
+}
+.choose-content-tab .choose-content-tab-view{
+  padding:20px 0;
+}
+.choose-content-tab-baby{
+  border:1px solid #ccc;
+  position:relative;
+}
+.choose-content-tab-baby:hover {
+  border:1px solid #3386F1;
+}
+.choose-content-tab-image-wrap {
+  padding:10px;
+  font-size:0;
+}
+.choose-content-tab-image-wrap image{
+  width:134px;
+  height:134px;
+}
+.choose-content-tab-baby-wrap{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.choose-content-tab-baby-info{
+  background:#EBF3FF;
+  padding:10px;
+}
+.choose-content-tab-baby Checkbox{
+  position:absolute;
+  right:10px;
+  top:9px;
+}
+
+.choose-content-tab-baby-info-title{
+  width:134px;
+  white-space: nowrap; 
+  font-size:12px;
+  color:#333333;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  margin-bottom:10px;
+}
+
+.choose-content-tab-baby-info-prize {
+  display:flex;
+  font-size:12px;
+  justify-content:space-between;
+}
+
+.choose-content-tab-baby-info-prize .prize-now{
+  color: #333;
+}
+
+.choose-content-tab-baby-info-prize .prize-now text{
+  color:#FFA033;
+}
+
+.choose-content-tab-baby-info-prize .prize-old{
+  color:#999999;
+  text-decoration:line-through;
+}

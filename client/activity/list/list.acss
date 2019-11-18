@@ -6,3 +6,16 @@
 .edit {
   margin-right: 20px;
 }
+
+.pagination{
+  margin-top: 20px;
+  align-items: center;
+  justify-content:flex-end;
+  display:flex;
+}
+
+.pagination-text{
+  font-size:14px;
+  color:rgba(51,51,51,1);
+  margin-right: 10px;
+}

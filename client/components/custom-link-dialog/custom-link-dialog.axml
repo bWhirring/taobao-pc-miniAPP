@@ -1,0 +1,24 @@
+<view>
+<overlay
+    visible=""
+    onRequestClose="onClose"
+    hasMask="true"
+    style="width:60%;position:absolute;left:0px;right:0px;margin:0 auto;top:200px;"
+    target=".edit-breadcrumb"
+    canCloseByMask="true"
+    data-index="1"
+  >
+    <view class="modal-content">
+      <view class="modal-content-title">添加制定页面链接<icon size="small" type="close" style="color: #999999;" /></view>
+      <form class="edit-content-form custom-link-dialog-form" inline="true">
+        <form-item size="large" class="edit-content-formItem" label="页面链接" validateState="error" required requiredMessage="{{'错了啦'}}">
+          <input class="edit-content-input" data-name="username" defaultValue="{{username}}" hasLimitHint="true"  name="活动名称" placeholder="请输入浏览页面链接"/>
+        </form-item>
+      </form>
+      <view class="modal-content-btn">
+        <button type="primary">确定</button>
+        <button>取消</button>
+      </view>
+    </view>
+  </overlay>
+</view>

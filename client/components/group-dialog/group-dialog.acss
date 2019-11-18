@@ -1,0 +1,16 @@
+.group-dialog-search {
+  margin: 20px 0;
+}
+
+.group-dialog-search Input {
+  margin-right:20px;
+}
+
+.group-dialog-checkbox{
+  padding:10px;
+  background:#F7F8FA;
+}
+
+.group-dialog-hascheckbox{
+  margin:20px 0;
+}

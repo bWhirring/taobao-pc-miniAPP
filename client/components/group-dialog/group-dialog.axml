@@ -1,0 +1,45 @@
+<view>
+<overlay
+    visible="{{showGroup}}"
+    onRequestClose="onClose"
+    hasMask="true"
+    style="width:60%;position:absolute;left:0px;right:0px;margin:0 auto;top:200px;"
+    target=".edit-breadcrumb"
+    canCloseByMask="true"
+    data-index="1"
+  >
+    <view class="modal-content">
+      <view class="modal-content-title">选择群聊组<icon size="small" onTap="choseGroup" type="close" style="color: #999999;" /></view>
+      <tab class="choose-content-tab">
+        <tab-item 
+          title="全部群聊"
+          key="all"
+        >         
+        <view class="group-dialog-search">
+          <input placeholder="请输入群聊名称"/>
+           <button type="primary">搜索</button>
+        </view>
+        <view class="group-dialog-checkbox">
+          <checkbox-group itemDirection="ver" dataSource="{{[{value: 'apple', label: '苹果',}, {value: 'pear', label: '梨'}, {value: 'orange', label: '橙子'}]}}"></checkbox-group>
+        </view>
+        </tab-item>
+         <tab-item 
+         key="choose"
+          title="已选择(5)"
+        >
+        <view class="group-dialog-checkbox group-dialog-hascheckbox">
+          <checkbox-group value="{{['apple', 'pear','orange']}}" itemDirection="ver" dataSource="{{[{value: 'apple', label: '苹果',}, {value: 'pear', label: '梨'}, {value: 'orange', label: '橙子'}]}}"></checkbox-group>
+        </view>
+        </tab-item>
+      </tab>
+      <view class="modal-content-btn choose-modal-footer">
+        <view>已选择<text>5/200</text></view>
+        <view>
+          <button type="primary">确定</button>
+          <button onTap="choseGroup">取消</button>
+        </view>
+        
+      </view>
+    </view>
+  </overlay>
+</view>

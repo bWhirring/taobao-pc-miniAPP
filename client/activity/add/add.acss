@@ -1,0 +1,165 @@
+.edit-title{
+  font-size:12px;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+}
+
+.edit-breadcrumb{
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(240,242,245,1);
+}
+
+.edit-title-separate{
+  margin: 0 5px;
+  font-weight:900;
+}
+
+
+.edit-content{
+  padding: 20px;
+}
+
+.edit-content-title{
+  font-size:16px;
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.edit-content-input{
+  width:300px !important;
+}
+
+.edit-content-formItem{
+  font-size: 14px;
+  font-weight:400;
+}
+.edit-content-formItem label {
+  color:#fff;
+}
+.edit-content-formItem-qunliao{
+  margin-top:15px;
+  font-size:14px;
+}
+
+.edit-content-formItem-qunliao text{
+  color:#333333;
+}
+.edit-content-formItem-qunliao .formItem-qunliao-num{
+  color:#3386F1;
+}
+.edit-content-formItem-qunliao .formItem-qunliao-btn{
+  color:#3386F1;
+  margin-left:10px;
+}
+
+.edit-content-formItem-addTableList{
+  height:54px;
+  width:400px;
+  line-height:54px;
+  color:#3386F1;
+  border-left:1px solid #D7DBE0;
+  border-bottom:1px solid #D7DBE0;
+  border-right:1px solid #D7DBE0;
+}
+
+.edit-content-formItem-addTableList Icon{
+  margin:0 10px;
+}
+
+.edit-content-formItem-checkbox{
+  margin-left:15px;
+}
+
+.checkbox-content{
+  margin-left:80px;
+  background-color:#F7F8FA;
+  padding:20px;
+}
+
+.checkbox-content view{
+  margin-bottom:10px;
+}
+
+.checkbox-content view text{
+  color:#3386F1;
+}
+
+.rule-config-textarea{
+  margin-left:80px;
+}
+
+.rule-config-textarea Textarea{
+  width:400px;
+  height:100px;
+}
+
+.submit-btn{
+  margin:20px 0 0 80px;
+}
+
+.submit-btn Button{
+  margin-left:20px;
+}
+
+.modal-content{
+  background:#FFFFFF;
+  width:100%;
+  border:1px solid #D7DBE0;
+  box-shadow:0px 6px 8px 0px #aaa;
+}
+
+.modal-content-title{
+  font-size:16px;
+  font-weight:600;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #D7DBE0;
+}
+
+.modal-content-btn{
+  padding:20px;
+  display:flex;
+  justify-content:flex-end;
+  border-top:1px solid #D7DBE0;
+}
+
+.modal-content-btn Button {
+  margin-right:15px;
+}
+
+.modal-content-form{
+  padding:20px 20px; 
+}
+
+.modal-content-imageUpload{
+  margin-left:80px;
+  display:flex;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.modal-content-imageUpload image{
+  margin-right:10px;
+}
+
+.modal-content-imageUpload-btn view{
+  margin-bottom:5px;
+  color:#666666
+}
+
+.modal-content-imageUpload-btn text{
+  font-size:12px;
+   margin-bottom:5px;
+  color:#666666;
+}
+
+.edit-content-formItem-choosePrize text{
+  color:#3386F1;
+  margin: 0 5px;
+}
+
+.edit-content-formItem-choosePrize-btn{
+  margin-left:15px !important;
+}
