@@ -15,7 +15,7 @@ Page({
     menu: [{
       name: '活动管理',
       key: 'activity',
-      title: '活动管理',
+      title: '活动管理'
     }, {
       name: 'huhu',
       key: 'huhu',
@@ -45,5 +45,4 @@ Page({
     const { path } = event.target.dataset;
     this.setData({ activeKey: path })
   }
-
 });

@@ -3,9 +3,8 @@ Component({
   data: {},
   props: {
     showGroup: false,
-    changeGroup: function () {}
+    changeGroup: (data) => console.log(data)
   },
-  didMount() {},
   didUpdate() {},
   didUnmount() {},
   methods: {
@@ -17,6 +16,9 @@ Component({
       // this.setData({
       //   showGroup: false
       // })
+    },
+    confirm() {
+      this.props.changeGroup('hahah')
     }
   },
 });

@@ -68,5 +68,6 @@
 <choose-dialog />
 
 <custom-link-dialog />
+<my-component extra="external extra" onCounterPlusOne="onCounterPlusOne" />
 
-<group-dialog showGroup="{{showGroup}}" changeGroup="{{changeGroup}}"/>
+<!-- <group-dialog showGroup="{{showGroup}}" changeGroup="{{changeGroup}}"/> -->

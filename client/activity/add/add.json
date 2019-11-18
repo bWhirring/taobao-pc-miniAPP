@@ -4,6 +4,7 @@
     "prize-dialog": "../../components/prize-dialog/prize-dialog",
     "choose-dialog": "../../components/choose-dialog/choose-dialog",
     "custom-link-dialog": "../../components/custom-link-dialog/custom-link-dialog",
-    "group-dialog": "../../components/group-dialog/group-dialog"
+    "group-dialog": "../../components/group-dialog/group-dialog",
+    "my-component": "/components/test/test"
   }
 }

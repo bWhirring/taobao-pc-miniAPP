@@ -51,6 +51,9 @@ Component({
       var MM = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
       var DD = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate());
       return YY + MM + DD;
-    }
+    },
+    onCounterPlusOne(data) {
+    console.log(data, 'hahahha');
+  }
   },
 });
